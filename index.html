@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="icon.png" type="image/png">
+    <title> Volswagen - ZAR </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="header" id="header">
+    <nav>
+      <img src="icon.png" class="logo">
+      <ul>
+        <li><a href="#" id="pologti">Polo GTI</a></li>
+        <li><a href="#" id="troc">T-Roc</a></li>
+        <li><a href="#" id="golf8">Golf 8</a></li>
+        <li><a href="#" id="tiguan">Tiguan</a></li>
+      </ul>
+      <a href="#" class="btn">Book Now</a>
+    </nav>
+    <div class="info">
+      <div>
+        <h2>1.9 s</h2>
+        <p>60 mph</p>
+      </div>
+      <div>
+        <h2>280 mph</h2>
+        <p>Top Speed</p>
+      </div>
+      <div>
+        <h2 id="price">R638 950</h2>
+        <p>Starting From</p>
+      </div>
+      <div class="line">
+
+      </div>
+      <div>
+        <h2 id="model">Polo GTI</h2>
+      </div>
+    </div>
+
+
+
+
+
+
+  </div>
+    <script>
+        var header = document.getElementById("header");
+        var gti = document.getElementById("pologti");
+        var roc = document.getElementById("troc");
+        var mk = document.getElementById("golf8");
+        var ti = document.getElementById("tiguan");
+        var model = document.getElementById("model");
+        var price = document.getElementById("price");
+        
+
+        gti.onclick = function(){
+          header.style.backgroundImage="url(pologti.jpg)";
+          model.innerHTML = "Polo GTI";
+          price.innerHTML = "R638 950";
+        }
+        roc.onclick = function(){
+          header.style.backgroundImage="url(Troc.jpg)";
+          model.innerHTML = "T-Roc";
+          price.innerHTML = "R687 999";
+        }
+        mk.onclick = function(){
+          header.style.backgroundImage="url(mk8.jpg)";
+          model.innerHTML = "Golf 8";
+          price.innerHTML = "R1 150 999";
+        }
+        ti.onclick = function(){
+          header.style.backgroundImage="url(tiguan.png)";
+          model.innerHTML = "Tiguan R";
+          price.innerHTML = "R987 999";
+        }
+        
+
+    </script>
+</body>
+</html>
